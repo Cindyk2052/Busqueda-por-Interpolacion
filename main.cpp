@@ -11,6 +11,8 @@ int main() {
   cout << "Ingrese el nombre del archivo: ";
   getline(cin, nombre);
   archivo.open(nombre.c_str(), ios::app);
+  archivo << "Arreglo: {1, 2, 3, 4, 5, 6, 7}" << endl;
+  archivo << "Elemento a buscar: 5" << endl;
   interpolacion ();
   return 0;
 }
